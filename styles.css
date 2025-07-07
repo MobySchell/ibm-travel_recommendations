@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: lightblue url("./island-resort.png") no-repeat fixed center;
+    background-size: cover;
+
+    #navigation {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 75px;
+        background-color: black;
+        color: white;
+
+        #icon {
+            align-content: center;
+            font-size: 25px;
+        }
+
+        #links {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 15px;
+
+            li {
+                align-content: center;
+
+                a {
+                    text-decoration: none;
+                }
+
+                a:link {
+                    color: white;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:visited {
+                    color: white;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: black;
+                    background-color: white;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: yellow;
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        #searchContainer {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+
+            #searchBarContainer {
+                align-self: center;
+                height: 60%;
+
+                input {
+                    height: 100%;
+                    width: 300px;
+                    border-radius: 10px;
+                    padding: 0px 10px;
+                }
+            }
+
+            .search-btns {
+                display: flex;
+                align-self: center;
+                gap: 15px;
+                height: 60%;
+
+                button {
+                    padding: 0px 10px;
+                }
+            }
+        }
+    }
+
+    #intro-card {
+        justify-self: start;
+        align-self: start;
+        height: fit-content;
+        width: 40%;
+        border-radius: 25px;
+        padding: 35px;
+        margin-left: 150px;
+        margin-bottom: 400px;
+        background-color: white;
+
+        #introHeading {
+            margin-bottom: 25px;
+            h1 {
+                font-size: 80px;
+            }
+        }
+        #introParagraph {
+            margin-top: 25px;
+            p {
+                font-size: 45px;
+            }
+        }
+    }
+
+    #AboutUs-Card {
+        justify-self: center;
+        align-self: center;
+        margin: 50px 150px 150px 150px;
+        color: white;
+
+        h1 {
+            font-size: 100px;
+            text-transform: uppercase;
+            color: rgb(0, 0, 0);
+            text-shadow: white 1.5px 1.5px;
+        }
+
+        p {
+            font-size: 45px;
+            padding: 35px;
+            border-radius: 30px;
+            color: black;
+            background-color: white;
+        }
+
+        .team-cards {
+            display: grid;
+            width: 100%;
+            margin-top: 25px;
+            grid-template-rows: 1;
+            grid-template-columns: 33% 33% 33%;
+
+            .team-card {
+                padding: 20px;
+                width: 80%;
+                background-color: white;
+                color: black;
+                border-radius: 15px;
+
+                h2 {
+                    font-size: 40px;
+                }
+
+                .responsibilities {
+                    font-size: 25px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+
+                .titles {
+                    display: flex;
+                    justify-content: center;
+
+                    p {
+                        font-size: 25px;
+                        color: white;
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    #ContactCard {
+        display: grid;
+        grid-template-rows: 10% 90%;
+        min-width: 800px;
+        margin-bottom: 200px;
+        height: 80%;
+        padding: 50px;
+        justify-self: center;
+        align-self: center;
+        color: black;
+        background-color: white;
+        border-radius: 35px;
+
+        #contactForm {
+            display: grid;
+            justify-self: center;
+            width: 90%;
+            height: 70%;
+            grid-template-columns: 90%;
+
+            .inputs {
+                display: grid;
+                grid-template-rows: 10% 90%;
+                gap: 5px;
+                width: 100%;
+                margin-bottom: 20px;
+
+                input {
+                    height: 50px;
+                    font-size: 20px;
+                    padding: 0px 10px;
+                    margin-top: 5px;
+                }
+
+                #messageInput {
+                    width: 100%;
+                    height: 150px;
+                    padding: 5px 10px;
+                    font-size: 20px;
+                }
+            }
+
+            button {
+                justify-self: center;
+                width: 70%;
+                height: 50px;
+            }
+        }
+    }
+}
