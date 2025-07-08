@@ -223,3 +223,43 @@
         }
     }
 }
+
+#cards {
+    position: fixed;
+    right: 455px;
+    top: 100px;
+    overflow: auto;
+    .card {
+        background: white;
+        color: black;
+        padding: 25px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        width: 400px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        img {
+            margin-top: 10px;
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 35px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .visitBtn {
+            width: 100px;
+            height: 40px;
+        }
+    }
+}
