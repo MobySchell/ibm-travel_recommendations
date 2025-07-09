@@ -24,6 +24,12 @@ function recommendationView() {
     }
 }
 
+function clearRecommended() {
+    let clearthis = document.getElementById("recommendationsCardArea");
+    clearthis.innerHTML = "<div id='cards'></div>";
+    location.reload();
+}
+
 async function getData(categoryKey) {
     const url = "travel_recommendation_api.json";
 
@@ -33,7 +39,7 @@ async function getData(categoryKey) {
             throw new Error(`Response status: ${response.status}`);
 
         const json = await response.json();
-        const container = document.getElementById("cards");
+        const container = document.getElementById("recommendationsCardArea");
         container.innerHTML = "";
 
         const data = json[categoryKey];
